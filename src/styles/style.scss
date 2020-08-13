@@ -25,20 +25,40 @@ nav ul {
 ul li {
   padding: 10px 20px;
   list-style: none;
+  color: #fafafa;
 }
 li:hover {
   cursor: pointer;
 }
+<<<<<<< HEAD:src/styles/style.scss
 
 .fullView {
+=======
+.titulo h1{
+  font-size:2.5em;
+  color: #fafafa;
+}
+.fullView{
+>>>>>>> ade60ba27e05b8e8f21aa0cce61a6af335865799:src/main.css
   width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD:src/styles/style.scss
   background-image: url("../assets/images//hero.jpg");
   background-repeat: no-repeat;
   color: white;
 }
 
 
+=======
+}
+.bgmain{
+  background-image: url('./media/bg1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+>>>>>>> ade60ba27e05b8e8f21aa0cce61a6af335865799:src/main.css
