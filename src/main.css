@@ -25,15 +25,26 @@ nav ul{
 ul li{
   padding: 10px 20px;
   list-style: none;
+  color: #fafafa;
 }
 li:hover{
   cursor: pointer;
 }
-
+.titulo h1{
+  font-size:2.5em;
+  color: #fafafa;
+}
 .fullView{
   width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.bgmain{
+  background-image: url('./media/bg1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
