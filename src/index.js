@@ -1,11 +1,12 @@
 import "./styles/style.scss";
+import { startAnimations } from './animations';
 
-async function print() {
-  // Here we are using dynamic import
-  const { greet } = await import("./greet");
-  const response = await greet("John Doe");
-  console.log(res);
-  console.log(response);
-}
+startAnimations();
+const form = document.querySelector("#contactForm");
 
-print();
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const email = document.querySelector("#email");
+  const message = document.querySelector("#message");
+});
+

@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",
+    "animejs": "^3.2.0",
     "core-js": "^3.6.4",
     "tailwindcss": "^1.6.2"
   },
