@@ -1,10 +1,10 @@
-import './styles/style.scss';
-import styles from './styles/index.module.css';
+import "./styles/style.scss";
 
 async function print() {
   // Here we are using dynamic import
-  const { greet } = await import('./greet');
-  const response = await greet('John Doe');
+  const { greet } = await import("./greet");
+  const response = await greet("John Doe");
+  console.log(res);
   console.log(response);
 }
 

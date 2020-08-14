@@ -12,5 +12,6 @@ module.exports = {
         grid: 'autoplace',
       },
     }),
+    require('tailwindcss'),
   ],
 };
