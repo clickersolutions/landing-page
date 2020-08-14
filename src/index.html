@@ -30,21 +30,20 @@
       </ul>
     </nav>
     <div class="lg:flex justify-between">
-      <div class="lg:w-1/3 w-full mb-10 flex items-center">
+      <div id="title" class="lg:w-1/3 w-full mb-10 flex items-center">
         <div>
           <h1 class="text-6xl lg:text-6xl font-bold">Clicker Solutions</h1>
           <h2 class="text-3xl lg:text-2xl">Consultoría en desarrollo de software</h2>
         </div>
-
       </div>
       <div class="lg:w-1/3 w-2/3 rounded p-10">
-        <form id="contactForm" class="shadow-lg rounded-md p-10">
+        <form id="contactForm" class="shadow-lg rounded-md p-10 bg-black bg-opacity-25">
           <div class="mb-4 w-full">
             <label class="block text-white font-bold mb-2" for="email">
               Tu Email
             </label>
             <input
-              class="placeholder-white w-full block bg-transparent shadow appearance-none p-2 border rounded text-white leading-tight focus:outline-none focus:shadow-outline"
+              class="placeholder-white block bg-transparent shadow appearance-none p-2 border rounded text-white leading-tight focus:outline-none focus:shadow-outline"
               id="email" type="text" placeholder="Correo electronico" />
           </div>
           <div class="mb-6 w-full">
@@ -53,11 +52,11 @@
             </label>
             <textarea
               id="message"
-              class="placeholder-white h-40 w-full block bg-transparent shadow appearance-none p-2 border rounded text-white leading-tight focus:outline-none focus:shadow-outline"
+              class="placeholder-white h-40 block bg-transparent shadow appearance-none p-2 border rounded text-white leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Cuentanos tu proyecto. Nos contactaremos contigo para ayudarte."></textarea>
           </div>
           <button
-            class="w-full bg-black hover:bg-gray-700 text-white font-bold py-2 rounded focus:outline-none focus:shadow-outline"
+            class="w-full bg-green-500 hover:bg-gray-700 text-white font-bold py-2 rounded focus:outline-none focus:shadow-outline"
             type="submit">
             Enviar
           </button>
@@ -88,6 +87,9 @@
     </div>
     
   </div>
+
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
