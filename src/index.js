@@ -1,26 +1,15 @@
+// External css files
+import "normalize.css";
+import "animate.css/animate.min.css";
+import "@fortawesome/fontawesome-free/css/all.css";
+import "@fortawesome/free-brands-svg-icons/";
+import "devicon/devicon.min.css";
+import "devicon/devicon-colors.css";
+
 import "./styles/style.scss";
-import { startAnimations } from './animations';
+
+import { startAnimations } from "./animations";
+import { startEvents } from "./events";
 
 startAnimations();
-const form = document.querySelector("#contactForm");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const email = document.querySelector("#email");
-  const message = document.querySelector("#message");
-});
-
-
-const body = document.querySelector('body');
-
-body.addEventListener("scroll", (e) => {
-  e.preventDefault();
-  const stop = body.scrollTop;
-  const div1 = document.querySelector('#seccionAliados');
-  const navElements = document.querySelectorAll('nav li');
-  if(stop > div1.offsetTop -  50){
-    navElements.forEach(elem => elem.classList.add('text-black'));
-  } else {
-    navElements.forEach(elem => elem.classList.remove('text-black'));
-  }
-});
+startEvents();
