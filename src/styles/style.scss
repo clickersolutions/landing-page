@@ -68,6 +68,7 @@ li:hover {
   bottom: 0;
   right: 0;
   position: absolute;
+  color: #fff;
 }
 
 // body::-webkit-scrollbar {
@@ -91,7 +92,6 @@ li:hover {
   padding: 2em 0 8em;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
-  position: relative;
 
   .pricing {
     display: -webkit-flex;
@@ -105,7 +105,6 @@ li:hover {
   }
 
   .pricing-item {
-    position: relative;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -115,6 +114,10 @@ li:hover {
     text-align: center;
     -webkit-flex: 0 1 330px;
     flex: 0 1 330px;
+
+    li {
+      color: #000;
+    }
   }
 
   .pricing-action {
