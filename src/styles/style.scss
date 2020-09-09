@@ -84,14 +84,14 @@ li:hover {
 // }
 
 #pricing-table {
-
-  background-image: url('../assets/images/technology.jpg');
+  background-image: url("../assets/images/technology.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #7a90ff;
   padding: 2em 0 8em;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  position: relative;
 
   .pricing {
     display: -webkit-flex;
@@ -101,9 +101,11 @@ li:hover {
     -webkit-justify-content: center;
     justify-content: center;
     width: 100%;
+    margin: 0 auto 3em;
   }
 
   .pricing-item {
+    position: relative;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -118,6 +120,7 @@ li:hover {
   .pricing-action {
     color: inherit;
     border: none;
+    background: none;
     cursor: pointer;
   }
 
@@ -125,9 +128,8 @@ li:hover {
     outline: none;
   }
 
-  .pricing-feature-list li {
-    text-align: center;
-    color: #000;
+  .pricing-feature-list {
+    text-align: left;
   }
 
   .pricing-palden .pricing-item {
@@ -146,18 +148,14 @@ li:hover {
     }
     .pricing-palden .pricing__item--featured {
       margin: 0;
+      z-index: 10;
       box-shadow: 0 0 20px rgba(46, 59, 125, 0.23);
     }
   }
 
   .pricing-palden .pricing-deco {
     border-radius: 10px 10px 0 0;
-    background: linear-gradient(
-      297deg,
-      rgba(48, 48, 48, 1) 0%,
-      rgba(55, 55, 55, 1) 63%,
-      rgba(0, 0, 0, 1) 100%
-    );
+    background: linear-gradient(135deg, #4097f9, #0af0c7);
     padding: 4em 0 9em;
     position: relative;
   }
@@ -171,6 +169,7 @@ li:hover {
   }
 
   .pricing-palden .pricing-title {
+    font-size: 0.75em;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -192,7 +191,12 @@ li:hover {
     transform: translate3d(-15px, 0, 0);
   }
 
+  .pricing-palden .icon {
+    font-size: 2.5em;
+  }
+
   .pricing-palden .pricing-price {
+    font-size: 5em;
     font-weight: bold;
     padding: 0;
     color: #fff;
@@ -201,10 +205,12 @@ li:hover {
   }
 
   .pricing-palden .pricing-currency {
+    font-size: 0.15em;
     vertical-align: top;
   }
 
   .pricing-palden .pricing-period {
+    font-size: 0.15em;
     padding: 0 0 0 0.5em;
     font-style: italic;
   }
