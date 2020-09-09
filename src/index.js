@@ -10,6 +10,8 @@ import "./styles/style.scss";
 
 import { startAnimations } from "./animations";
 import { startEvents } from "./events";
+import {initModal} from './modal';
 
 startAnimations();
 startEvents();
+initModal();

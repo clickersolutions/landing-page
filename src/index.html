@@ -12,6 +12,7 @@
 </head>
 
 <body class="w-full">
+  <div id="particles-js"></div>
   <nav id="navMobile" class="md:hidden w-full flex text-white p-3 z-40">
     <div class="w-5/6">
       <ul class="flex flex-col hidden">
@@ -41,7 +42,7 @@
       <i class="fas fa-hamburger"></i>
     </button>
   </nav>
-  <nav class="lg:text-xl font-bold mt-2 hidden md:block">
+  <nav class="lg:text-xl font-bold mt-2 hidden md:block w-full">
     <ul>
       <li class="hover:underline hover:text-yellow-500">
         Home
@@ -57,13 +58,13 @@
       </li>
     </ul>
   </nav>
-  <section id="home" class="fullView bgmain flex flex-col">
-    <div class="lg:flex justify-between lg:px-64 w-full">
-      <div id="title" class="lg:w-4/12 w-full mb-10 items-center lg:mt-0 text-center lg:text-justify">
+  <section id="home" class="fullView bgmain flex flex-col h-screen">
+    <div class="xl:flex justify-between lg:px-64 w-full">
+      <div id="title" class="lg:w-4/12 w-full mb-10 items-center lg:mt-0 text-center lg:text-justify ">
         <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold mx-4">Clicker Solutions</h1>
-        <div class="text-xl lg:text-3xl px-5" id="typewriter">Consultoría en desarrollo de software</div>
+        <div class="text-xl w-full lg:text-3xl px-5" id="typewriter">Consultoría en desarrollo de software</div>
       </div>
-      <div class="lg:w-4/12 w-3/4 mx-auto lg:mx-0 rounded lg:p-10">
+      <div class="xl:w-4/12 w-3/4 mx-auto lg:mx-0 rounded lg:p-10">
         <form id="contactForm" class="shadow-lg rounded-md p-10 bg-black bg-opacity-25">
           <div class="mb-4 w-full">
             <label class="block text-white font-bold mb-2" for="email">
@@ -88,7 +89,8 @@
           </button>
         </form>
       </div>
-      <div class="lg:w-4/12 w-full md:pl-2 mx-auto px-5 mt-4 animate__animated animate__lightSpeedInRight">
+      <div
+        class="hidden xl:block lg:w-4/12 w-full md:pl-2 mx-auto px-5 mt-4 animate__animated animate__lightSpeedInRight">
         <h3 class="lg:text-3xl text-xl font-bold pb-5 text-center">
           Tecnologías utilizadas
         </h3>
@@ -123,18 +125,179 @@
     <div class="block" id="arrow-down">
       <i class="fas fa-chevron-down text-white text-6xl"></i>
     </div>
-    <a href="https://wa.link/7o42cx">
-      <div class="fixed bottom-0 right-0 p-2 mr-2 mb-2 bg-green-500 rounded-full h-10 w-10 flex items-center justify-center text-lg md:text-5xl md:mr-10 md:mb-10 md:h-20 md:w-20">
-        <i class="fab fa-whatsapp"></i>
-      </div>
-    </a>
   </section>
-  <section id="seccionAliados">
-    <div class="w-full min-h-screen bg-white p-16 max-w-full">
-      <h3 class="text-black w-full text-3xl text-center">Nuestros aliados</h3>
-      <div class="aliados max-w-screen-md h-40  m-auto mt-20 flex items-center justify-around">
-        <div class="item w-1/5 h-32 bg-black ">
+  <div
+    class="bg-green-500 rounded-full h-10 w-10 flex items-center justify-center text-lg md:text-5xl md:mr-10 md:mb-10 md:h-20 md:w-20"
+    id="waBtn">
+    <a href="https://wa.link/7o42cx">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
 
+  <section id="pricing-table">
+
+    <h3 class="text-center text-white text-5xl mb-10">Planes Ecommerce</h1>
+      <div class="pricing pricing-palden">
+        <div class="pricing-item features-item ja-animate" data-animation="move-from-bottom" data-delay="item-0"
+          style="min-height: 497px;">
+          <div class="pricing-deco">
+            <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1"
+              preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve"
+              y="0px">
+              <path class="deco-layer deco-layer--1"
+                d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
+                fill="#FFFFFF" opacity="0.6"></path>
+              <path class="deco-layer deco-layer--2"
+                d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
+                fill="#FFFFFF" opacity="0.6"></path>
+              <path class="deco-layer deco-layer--3"
+                d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
+                fill="#FFFFFF" opacity="0.7"></path>
+              <path class="deco-layer deco-layer--4"
+                d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
+                fill="#FFFFFF"></path>
+            </svg>
+            <div class="pricing-price"><span class="pricing-currency">$</span>1900
+              <span class="pricing-period">desde</span>
+            </div>
+            <h3 class="pricing-title">Starter</h3>
+          </div>
+          <ul class="pricing-feature-list">
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Página lista para vender</li>
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Diseño atractivo</li>
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Configuración de motor de pago</li>
+
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              SEO frindly</li>
+
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Asesoría para agregar productos y modificar el sitio</li>
+          </ul>
+          <button type="button" id="btn-plan-1" class="pricing-action">Elegir Plan</button>
+        </div>
+        <div class="pricing-item features-item ja-animate pricing__item--featured" data-animation="move-from-bottom"
+          data-delay="item-1" style="min-height: 497px;">
+          <div class="pricing-deco" style="background: linear-gradient(135deg,#a93bfe,#584efd)">
+            <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1"
+              preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve"
+              y="0px">
+              <path class="deco-layer deco-layer--1"
+                d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
+                fill="#FFFFFF" opacity="0.6"></path>
+              <path class="deco-layer deco-layer--2"
+                d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
+                fill="#FFFFFF" opacity="0.6"></path>
+              <path class="deco-layer deco-layer--3"
+                d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
+                fill="#FFFFFF" opacity="0.7"></path>
+              <path class="deco-layer deco-layer--4"
+                d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
+                fill="#FFFFFF"></path>
+            </svg>
+            <div class="pricing-price"><span class="pricing-currency">$</span>2500
+              <span class="pricing-period">/ mo</span>
+            </div>
+            <h3 class="pricing-title">Business</h3>
+          </div>
+          <ul class="pricing-feature-list">
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Página lista para vender</li>
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Diseño atractivo</li>
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Configuración de motor de pago</li>
+
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              SEO frindly</li>
+
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Asesoría para agregar productos y modificar el sitio</li>
+
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Publicación de tus productos</li>
+          </ul>
+          <button class="pricing-action">Elegir Plan</button>
+        </div>
+        <div class="pricing-item features-item ja-animate" data-animation="move-from-bottom" data-delay="item-2"
+          style="min-height: 497px;">
+          <div class="pricing-deco">
+            <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1"
+              preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve"
+              y="0px">
+              <path class="deco-layer deco-layer--1"
+                d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
+                fill="#FFFFFF" opacity="0.6"></path>
+              <path class="deco-layer deco-layer--2"
+                d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
+                fill="#FFFFFF" opacity="0.6"></path>
+              <path class="deco-layer deco-layer--3"
+                d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
+                fill="#FFFFFF" opacity="0.7"></path>
+              <path class="deco-layer deco-layer--4"
+                d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
+                fill="#FFFFFF"></path>
+            </svg>
+            <div class="pricing-price"><span class="pricing-currency">$</span>99
+              <span class="pricing-period">/ mo</span>
+            </div>
+            <h3 class="pricing-title">Enterprise</h3>
+          </div>
+          <ul class="pricing-feature-list">
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Página lista para vender</li>
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Diseño atractivo</li>
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Configuración de motor de pago</li>
+
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              SEO frindly</li>
+
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Asesoría para agregar productos y modificar el sitio</li>
+
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Publicación de tus productos</li>
+
+            <li class="pricing-feature">
+              <i class="fas fa-check"></i>
+              Fotografía de productos</li>
+          </ul>
+          <button class="pricing-action">Elegir Plan</button>
+        </div>
+      </div>
+
+      <div class="text-white text-center mt-5">
+        * Todos los planes requieren de un dominio y hosting
+      </div>
+
+  </section>
+  <section id="seccionAliados" class="h-screen">
+    <div class="w-full p-16 max-w-full">
+      <h3 class="text-white w-full text-4xl lg:text-5xl text-center">Nuestros Aliados</h3>
+      <div class="aliados max-w-screen-md  m-auto mt-20 flex items-center justify-around">
+        <div class="item w-1/5 h-32 bg-black text-white">
+          <img src="./assets/images/aromagarden.png" alt="">
         </div>
         <div class="item w-1/5 h-32 bg-black ">
 
@@ -148,13 +311,45 @@
           Saber más
         </button>
       </div>
-
+    </div>
+    <div
+      class="flex justify-center text-white xl:hidden mb-10 xl:w-4/12 w-full md:pl-2 px-5 mt-4 animate__animated animate__lightSpeedInRight">
+      <div class="">
+        <h3 class="lg:text-3xl text-xl font-bold pb-5 text-center">
+          Tecnologías utilizadas
+        </h3>
+        <div class="lg:text-6xl text-3xl grid grid-cols-8 md:grid-cols-4 gap-4">
+          <i class="devicon-android-plain"></i>
+          <i class="devicon-apple-original"></i>
+          <i class="devicon-javascript-plain"></i>
+          <i class="devicon-angularjs-plain"></i>
+          <i class="devicon-react-original"></i>
+          <i class="devicon-vuejs-plain"></i>
+          <i class="devicon-git-plain"></i>
+          <i class="devicon-amazonwebservices-original"></i>
+          <i class="devicon-nodejs-plain"></i>
+          <i class="devicon-docker-plain"></i>
+          <i class="devicon-wordpress-plain"></i>
+          <i class="devicon-linux-plain"></i>
+          <i class="devicon-electron-original"></i>
+          <i class="devicon-mongodb-plain"></i>
+          <i class="devicon-mysql-plain"></i>
+          <i class="devicon-postgresql-plain"></i>
+          <i class="devicon-go-plain"></i>
+          <i class="devicon-sass-original"></i>
+          <i class="devicon-python-plain"></i>
+          <i class="devicon-typescript-plain"></i>
+          <i class="devicon-cplusplus-plain"></i>
+          <i class="devicon-csharp-plain"></i>
+          <i class="devicon-django-plain"></i>
+          <i class="devicon-ionic-original"></i>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
-
-
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>

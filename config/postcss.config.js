@@ -1,5 +1,7 @@
 module.exports = {
   plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
     require('postcss-flexbugs-fixes'),
     require('postcss-preset-env')({
       stage: 2,
@@ -12,6 +14,5 @@ module.exports = {
         grid: 'autoplace',
       },
     }),
-    require('tailwindcss'),
   ],
 };
