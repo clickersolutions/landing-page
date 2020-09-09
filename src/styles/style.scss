@@ -13,6 +13,7 @@ body {
   padding: 0px;
   overflow-x: hidden;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *,
@@ -101,7 +102,6 @@ li:hover {
     -webkit-justify-content: center;
     justify-content: center;
     width: 100%;
-    margin: 0 auto 3rem;
   }
 
   .pricing-item {
